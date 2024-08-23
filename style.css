@@ -5,6 +5,7 @@ body {
 
 #Header {
     background-color: burlywood;
+    text-align: center;
 }
 
 #icon {
@@ -25,6 +26,6 @@ p {
 
 button {
     background-color: burlywood;
-    color: rgb(48, 47, 45);
+    color: rgb(128, 87, 34);
     border: 1cm;
 }
