@@ -3,12 +3,24 @@ body {
     background:rgb(48, 47, 45);
 }
 
+#Header {
+    background-color: burlywood;
+}
+
+#icon {
+    width: 20px;
+    height: 20px;
+}
+
 h1 {
     color:rgb(128, 87, 34);
+    background-color: burlywood;
+    text-align: center;
 }
 
 p {
     color:burlywood;
+    text-align: center;
 }
 
 button {
