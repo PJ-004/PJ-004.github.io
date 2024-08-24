@@ -10,7 +10,8 @@ const resume = "<p> <h2> Work Experience </h2> </p>\
                 <p> Developed a python script for a close relative that extracts the warnings from a System Verilog logfile. \
                  The script searches through a log file and extracts warning messages from them after looping through every line. \
                  This script required thorough knowledge of the python programming language. \
-                 It also drastically improved the workflow of the employees by automating an otherwise tedious task. </p>\
+                 It also drastically improved the workflow of the employees by automating an otherwise tedious task. \
+                 I am not at liberty to divulge the source code due to a non-disclosure agreement </p>\
                 <p> <h2> Education </h2> </p> \
                 <p> <h3> September 2022 - Present | College </h3> </p>\
                 <p> Bachelor's of Science in Computer Engineering </p>\
