@@ -16,8 +16,10 @@ const resume = "<p> <h2> Work Experience </h2> </p>\
                 <p> Bachelor's of Science in Computer Engineering </p>\
                 <p> University of California - Santa Cruz </p>\
                 <p> <h3> September 2012 - July 2022 | School </h3> </p>\
+                <p> Finished Schooling from 2<sup>nd</sup> - 12<sup>th</sup> Grade </p>\
                 <p> Delhi Public School - Bangalore East </p>";
 
 function resumePage() {
     document.getElementById('body').innerHTML = resume;
+    document.getElementById('body').style.textAlign = 'justify';
 }
