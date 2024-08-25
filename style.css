@@ -49,3 +49,30 @@ h4 {
     width: 20px;
     height: 20px;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: burlywood;
+    background: rgb(128, 87, 34);
+  }
+  
+  ::selection {
+    color: burlywood;
+    background: rgb(128, 87, 34);
+  }
+
+  a:link {
+    color: rgb(128, 87, 34);
+    text-decoration: underline;
+  }
+  a:visited {
+    color: rgb(252, 143, 0);
+    text-decoration: underline;
+  }
+  a:hover {
+    color: rgb(128, 87, 34);
+    text-decoration: underline;
+  }
+  a:active {
+    color: burlywood;
+    text-decoration: underline;
+  }
