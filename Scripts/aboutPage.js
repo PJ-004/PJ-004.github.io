@@ -20,6 +20,6 @@ function aboutMe() {
     document.getElementById('body').innerHTML += "<p>" + aboutText[1] + "</p>";
     document.getElementById('body').innerHTML += "<p>" + aboutText[2] + "</p>";
     document.getElementById('body').innerHTML += "<p>" + aboutText[3] + "</p>";
-    document.getElementById('body').innerHTML += `<p> <a href="https://linkedin.com/in/pranav--jha"><img id='icon' src="Icons/linkedin.png"/></a> <a href="https://github.com/PJ-004"><img id='icon' src="Icons/github.png"/></a> </p>`;
+    document.getElementById('body').innerHTML += `<p> <a href="https://linkedin.com/in/pranav--jha"><img id='icon' src="Icons/linkedin.png"/></a> <a href="https://github.com/PJ-004"><img id='icon' src="Icons/github.png"/></a> <a href="https://www.instagram.com/anonymousjguywastaken"><img id='icon' src="Icons/Instagram.png"/></a> </p>`;
     document.getElementById('body').style.textAlign = 'center';
 }
