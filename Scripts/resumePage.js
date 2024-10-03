@@ -1,6 +1,6 @@
 const resume = "<p> <h2> Work Experience </h2> </p>\
                 <p></p>\
-                <p> <h3> July 2024 - Present | QuicHub Innovations </h3> </p>\
+                <p> <h3> July 2024 - September 2024 | QuicHub Innovations </h3> </p>\
                 <p> <h4> Software Developer Intern </h4> </p>\
                 <p> Interned at QuicHub Innovations India as a Software Developer. Migrated their data from the older urql to GraphQL.  \
                  I worked with React, TypeScript, Next.js, and GraphQL to help with designing their frontend software. \
