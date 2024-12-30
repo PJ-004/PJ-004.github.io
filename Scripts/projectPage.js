@@ -7,6 +7,10 @@ const Projects = "<p> <h2> Academic Projects </h2> </p>\
                  I led the team, built the second level and helped set up the GitHub link for the game.\
                  The game's source code is located on my old, personal GitHub <a href='https://github.com/Emperor-Chinohito/GDevelop-Game'>Emperor-Chinohito</a> </p>\
                 <p> <h2> Other Projetcs </h2> </p> \
+                <p> <h3> California Sales Tax Calculator </h3> </p>\
+                <p> The source code can be found on <a href='https://github.com/PJ-004/ActualPriceCalculator'>my GitHub</a>.\
+                 This is an app for Android Phones built using Kotlin and Android Studio that helps calculate the price of an item after Sales Tax.\
+                 You can select any county in the state of California and calculate the tax on any item.</p>\
                 <p> <h3> PJTerm - A Minimalist Linux Terminal Built with Qt6 </h3> </p>\
                 <p> The source code can be found on <a href='https://github.com/PJ-004/PJTerm'>my GitHub</a>.\
                  This is a terminal that I built for Personal use using a guide by DonnieWest of Code Koalas.\
