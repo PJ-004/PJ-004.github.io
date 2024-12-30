@@ -40,6 +40,19 @@ h4 {
     text-align: center;
 }
 
+#getResume {
+    background-color: burlywood;
+    color: rgb(128, 87, 34);
+    border: 50px color(srgb 128 87 34);
+    width: 175px;
+    height: 25px;
+    font-size: medium;
+}
+
+#resumeButton {
+  text-align: center;
+}
+
 #Header {
     background-color: burlywood;
     text-align: center;

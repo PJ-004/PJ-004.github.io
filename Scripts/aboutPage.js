@@ -10,16 +10,6 @@ function findAge(month, dayOfMonth) {
     return age;
 }
 
-const aboutText = [`Hello, I am Pranav Jha, I am a ${findAge(newDate.getMonth(), newDate.getDate())} year old Computer Engineering Student at the University of California - Santa Cruz.`,
-                    "I have experience in Python, Go, Javascript, and Typescript. I also know how to work with ReactJS, Node, and MySQL.", 
-                    "This site is built using HTML and CSS with pure Javascript (i.e. without a framework) because I wanted to challenge myself",
-                    "Links to my LinkedIn and GitHub page below:"]
-
 function aboutMe() {
-    document.getElementById('body').innerHTML  = "<p>" + aboutText[0] + "</p>";
-    document.getElementById('body').innerHTML += "<p>" + aboutText[1] + "</p>";
-    document.getElementById('body').innerHTML += "<p>" + aboutText[2] + "</p>";
-    document.getElementById('body').innerHTML += "<p>" + aboutText[3] + "</p>";
-    document.getElementById('body').innerHTML += `<p> <a href="https://linkedin.com/in/pranav--jha"><img id='icon' src="Icons/linkedin.png"/></a> <a href="https://github.com/PJ-004"><img id='icon' src="Icons/github.png"/></a> <a href="https://www.instagram.com/anonymousjguywastaken"><img id='icon' src="Icons/Instagram.png"/></a> </p>`;
-    document.getElementById('body').style.textAlign = 'center';
+    location.href = 'index.html';
 }

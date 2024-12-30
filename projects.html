@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pranav Jha's Resume</title>
+        <link rel="stylesheet" href="style.css"/>
+
+        <meta http-equiv='cache-control' content='no-cache'> 
+        <meta http-equiv='expires' content='0'> 
+        <meta http-equiv='pragma' content='no-cache'>
+    </head>
+
+    <div id="Header">
+        <h1 id="dateToday"></h1>
+        <button type="aboutMe" onclick="aboutMe()">About Me</button>
+        <button type="resume" onclick="resumePage()">Resume</button>
+        <button type="projects" onclick="projectPage()">Projects</button>
+    </div>
+
+    <body id="main">
+
+        <div id="projectBody">
+            <p> <h2> Academic Projects </h2> </p>
+
+                <p></p>
+
+                <p> <h3> Platforming Game </h3> </p>
+                <p> <h4> UC Santa Cruz </h4> </p>
+                <p> Built a video game using a free online game development engine called GDevelop.
+                 The game was built alongside a team of two other people.
+                 I led the team, built the second level and helped set up the GitHub link for the game.
+                 The game's source code is located on my old, personal GitHub <a href='https://github.com/Emperor-Chinohito/GDevelop-Game'>Emperor-Chinohito</a> </p>
+            
+            <p> <h2> Other Projetcs </h2> </p>
+                <p> <h3> California Sales Tax Calculator </h3> </p>
+                <p> The source code can be found on <a href='https://github.com/PJ-004/ActualPriceCalculator'>my GitHub</a>.
+                 This is an app for Android Phones built using Kotlin and Android Studio that helps calculate the price of an item after Sales Tax.
+                 You can select any county in the state of California and calculate the tax on any item.</p>
+                
+                <p> <h3> PJTerm - A Minimalist Linux Terminal Built with Qt6 </h3> </p>
+                <p> The source code can be found on <a href='https://github.com/PJ-004/PJTerm'>my GitHub</a>.
+                 This is a terminal that I built for Personal use using a guide by DonnieWest of Code Koalas.
+                 whose <a href='https://codekoalas.com/blog/build-your-own-minimal-terminal'>2017 blog helped me a lot with getting started.</a>
+                 The terminal was built in C++ and is minimalist to fit my workflow</p>
+                
+                <p> <h3> Warning Collection Script </h3> </p>
+                <p> Developed a python script for a close relative that extracts the warnings from a System Verilog logfile.
+                 The script searches through a log file and extracts warning messages from them after looping through every line.
+                 This script required thorough knowledge of the python programming language.
+                 It also drastically improved the workflow of the employees by automating an otherwise tedious task.
+                 I am not at liberty to divulge the source code due to a non-disclosure agreement </p>
+        </div>
+
+        <script src="Scripts/aboutPage.js"></script>
+        <script src="Scripts/displayDate.js"></script>
+        <script src="Scripts/projectPage.js"></script>
+        <script src="Scripts/resumePage.js"></script>
+
+    </body>
+
+</html>
