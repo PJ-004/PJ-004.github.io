@@ -21,6 +21,11 @@ button {
     margin-right: 30px;
 }
 
+button:hover {
+    background-color: rgb(128, 87, 34);
+    color: burlywood;
+}
+
 h2 {
     color: rgb(128, 87, 34);
     text-align: center;
@@ -44,13 +49,38 @@ h4 {
     background-color: burlywood;
     color: rgb(128, 87, 34);
     border: 50px color(srgb 128 87 34);
+    border-radius: 12px;
     width: 175px;
     height: 25px;
     font-size: medium;
 }
 
+#getResume:hover {
+  background-color: rgb(128, 87, 34);
+  color: burlywood;
+}
+
 #resumeButton {
   text-align: center;
+}
+
+#homeResumeButton {
+  background-color: rgb(116, 116, 116);
+  color: rgb(48, 47, 45);
+  border: 50px color(srgb 128 87 34);
+  border-radius: 12px;
+  width: 175px;
+  height: 25px;
+  font-size: medium;
+}
+
+#homeResumeButton:hover {
+    background-color: rgb(184, 184, 184);
+    color: rgb(34, 34, 34);
+}
+
+#homeResume {
+    text-align: center;
 }
 
 #Header {
