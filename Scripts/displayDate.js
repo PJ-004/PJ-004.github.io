@@ -11,13 +11,11 @@ const currentDayOfWeek = date.getDay();
 const currentDate = `${weekdays[currentDayOfWeek]}, ${monthNames[currentMonth]} ${currentDayOfMonth} ${currentYear}`
 
 function birthday(month, dayOfMonth) {
-    if (month == 0 && dayOfMonth <= 12) {
-        var age = date.getFullYear() - 2005;
+    if (month == 0 && dayOfMonth < 12) {
+        return date.getFullYear() - 2005;
     }
 
-    age = date.getFullYear() - 2004;
-
-    return age;
+    return date.getFullYear() - 2004;
 }
 
 document.getElementById('dateToday').innerHTML = `Today is ${currentDate}`;
