@@ -10,6 +10,18 @@ const currentDayOfWeek = date.getDay();
 
 const currentDate = `${weekdays[currentDayOfWeek]}, ${monthNames[currentMonth]} ${currentDayOfMonth} ${currentYear}`
 
+function aboutMe() {
+    location.href = 'index.html';
+}
+
+function resumePage() {
+    location.href = 'resume.html';
+}
+
+function projectPage() {
+    location.href = 'projects.html';
+}
+
 function birthday(month, dayOfMonth) {
     if (month == 0 && dayOfMonth < 12) {
         return date.getFullYear() - 2005;
