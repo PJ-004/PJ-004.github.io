@@ -12,7 +12,7 @@ const currentDate = `${weekdays[currentDayOfWeek]}, ${monthNames[currentMonth]} 
 
 function birthday(month, dayOfMonth) {
     if (month == 0 && dayOfMonth <= 12) {
-        var age = date.getFullYear() - 2003;
+        var age = date.getFullYear() - 2005;
     }
 
     age = date.getFullYear() - 2004;
