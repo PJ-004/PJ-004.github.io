@@ -45,6 +45,16 @@ h4 {
     text-align: center;
 }
 
+#resumeBody {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#projectBody {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
 #getResume {
     background-color: burlywood;
     color: rgb(128, 87, 34);
