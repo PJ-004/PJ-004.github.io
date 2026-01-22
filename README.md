@@ -5,18 +5,20 @@ This is my personal website that I created using HTML/CSS and Javascript. I used
 ![Website Picture](https://github.com/user-attachments/assets/7e1b1206-d61e-4884-9404-44114b900264)
 
 ## How it works
-All the Javascript code is stored in the `/Scripts` directory. The main `index.html` file loads those scripts.
+All the Javascript and WASM code is stored in the `/Scripts` directory. The main `index.html` file loads those scripts.
 
-The scripts display which page to load. By clicking any of the buttons in the header, one of these scripts is activated, changing the body tag in the `index.html` file. `aboutPage.js` displays the 'About Me' page, `projectPage.js` shows my current projects, and `resumePage.js` shows my resume (i.e. the places I've worked at)
+Since the C file uses the time.h library in C, I had to compile to a .js file so that it can use the C functions.
 
-The afforementioned scripts use the `innerHTML` command to change the text of any body tag in the HTML file.
-
-`displayDate.js` is used for displaying my age on first visiting the website, as well as the date on the top. It uses a Date object to find out your system's time.
+The website saw a 2x improvement in loading time after I added wasm. The drawback is that the size of the website increased to 9 MB.
 
 ## Hosting
-This site was built using [GitHub Pages](https://pages.github.com/), however, I have now attached a domain name to it.
+This site was built using [GitHub Pages](https://pages.github.com/), however, I have now attached a domain name to it. The domain is hosted via Cloudflare.
 
-## Potential new features
-I may add a way to download my resume instead of just linking to LinkedIn.
+## Usage
+You can host the site on any server and it should load up on any browser. They should be compatible with wasm however.
 
-In the future, I may change this website to use stuff like React just to show my proficiency in it, although I do like pure Javascript quite a bit.
+## Build wasm file
+You would need to use emscripten to build wasm. Get emscripten [here](https://emscripten.org/docs/getting_started/downloads.html)
+
+Use this command in the Scripts/ directory:
+`emcc js_time.c -o js_time.js   -s MODULARIZE=1   -s EXPORT_NAME="createModule"   -s EXPORTED_FUNCTIONS="['_curr_age','_get_date','_malloc','_free']"   -s EXPORTED_RUNTIME_METHODS="['ccall','cwrap','UTF8ToString']"`
