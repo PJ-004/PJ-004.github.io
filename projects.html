@@ -14,9 +14,9 @@
 
     <div id="Header">
         <h1 id="dateToday"></h1>
-        <button type="aboutMe" onclick="aboutMe()">About Me</button>
-        <button type="resume" onclick="resumePage()">Resume</button>
-        <button type="projects" onclick="projectPage()">Projects</button>
+        <button type="aboutMe" onclick="location.href = 'index.html'">About Me</button>
+        <button type="resume" onclick="location.href = 'resume.html'">Resume</button>
+        <button type="projects" onclick="location.href = 'projects.html'">Projects</button>
     </div>
 
     <body id="main">
@@ -63,7 +63,16 @@
                 </p>
         </div>
 
-        <script src="Scripts/mainScript.js"></script>
+	<script src="Scripts/js_time.js"></script>
+	<script>
+		createModule().then(Module => {
+        		const buffer = Module._malloc(32);
+			Module._get_date(buffer);
+			const dateString = Module.UTF8ToString(buffer);
+			document.getElementById("dateToday").innerText = dateString;
+			Module._free(buffer);
+    		});
+        </script>
 
     </body>
 

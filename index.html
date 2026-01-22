@@ -14,9 +14,9 @@
 
     <div id="Header">
         <h1 id="dateToday"></h1>
-        <button type="aboutMe" onclick="aboutMe()">About Me</button>
-        <button type="resume" onclick="resumePage()">Resume</button>
-        <button type="projects" onclick="projectPage()">Projects</button>
+        <button type="aboutMe" onclick="location.href = 'index.html'">About Me</button>
+        <button type="resume" onclick="location.href = 'resume.html'">Resume</button>
+        <button type="projects" onclick="location.href = 'projects.html'">Projects</button>
     </div>
 
     <body id="main">
@@ -26,7 +26,7 @@
 
             <p> I have experience in Python, Go, Javascript, and Typescript. I also know how to work with ReactJS, Node, and MySQL. </p>
 
-            <p> This site is built using HTML and CSS with pure Javascript (i.e. without a framework) because I wanted to challenge myself </p>
+            <p> This site is built using HTML and CSS with Javascript alongside a little WebAssembly compiled using the C programming language. </p>
 
             <p> Links to my LinkedIn and GitHub page below: </p>
 
@@ -41,7 +41,19 @@
             </p>
         </div>
 
-        <script src="Scripts/mainScript.js"></script>
+	<script src="Scripts/js_time.js"></script>
+	<script>
+		createModule().then(Module => {
+        		const curr_age = Module.cwrap('curr_age', 'number', ['number', 'number', 'number']);
+        		const my_age = curr_age(2004, 1, 12);
+			const buffer = Module._malloc(32);
+			Module._get_date(buffer);
+			const dateString = Module.UTF8ToString(buffer);
+			document.getElementById("dateToday").innerText = dateString;
+        		document.getElementById("age").innerText = my_age;
+			Module._free(buffer);
+    		});
+        </script>
 
     </body>
 
